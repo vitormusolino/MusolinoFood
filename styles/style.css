@@ -174,7 +174,7 @@ header{
         font-size: 10px;
     }
 
-    .container{
+    .container-main{
         height: 400px;
     }
 
@@ -637,7 +637,6 @@ header{
 /***********************serviços**********************/
 
 .servicos{
-    height: 150vh;
     background: var(--cor-3);
 }
 
@@ -674,6 +673,7 @@ header{
 .card-grande{
     max-width: 30ch;
     padding: 10px 82px 89px ;
+    margin-bottom: 100px;
 }
 
 .container-card{
@@ -682,6 +682,89 @@ header{
     margin-bottom: 100px;
 }
 
+@media(max-width: 1550px){
+    .servicos-posicao{
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+@media(max-width: 1300px){
+    .container-card{
+        gap: 100px;
+    }
+    .container-card{
+        flex-direction: column;
+    }
+    .card-grande{
+        margin-bottom: 0px;
+    }
+    .servicos-posicao{
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 1000px){
+    .container-card{
+        flex-direction: column;
+    }
+    .card-grande{
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 700px){
+    .servicos h1{
+        font-size: 60px
+    }
+}
+
+@media(max-width: 500px){
+    .servicos h1{
+        font-size: 50px
+    }
+
+    .card-img img{
+        max-width: 400px;  
+    }
+
+    .card-title{
+        padding: 40px 67px;
+    }
+
+    .card-grande{
+        max-width: 25ch;
+        padding: 10px 74px 89px ;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 450px){
+    .servicos h1{
+        font-size: 45px
+    }
+
+    .card-img img{
+        max-width: 350px;  
+    }
+
+    .card-title{
+        padding: 40px 41.374px;
+    }
+
+    .card-grande{
+        max-width: 30ch;
+        padding: 10px 24px 89px ;
+        margin-bottom: 0px;
+    }
+
+    .card-grande :last-child{
+        margin-bottom: 50px;
+    }
+}
 /***********************fim**********************/
 
 /***********************contato-servicos**********************/
@@ -699,7 +782,9 @@ header{
 }
 
 .contato-conteudo{
-    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contato-conteudo h2{
@@ -720,6 +805,7 @@ header{
     padding: 15px 40px;
     background: var(--cor-1);
     border-radius: 7px;
+    max-width: 90px;
 }
 
 .carrinho-contato{
@@ -727,4 +813,51 @@ header{
     max-height: 450px;
     margin-left: 625px;
     background-size: cover;
+}
+ 
+@media(max-width: 1500px){
+    .contato-pages {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 1300px){
+    .carrinho-contato{
+        display: none;
+    }
+    .contato-pages{
+        margin-left: 150px;
+    }
+    .contato-conteudo{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 800px){
+    .contato-pages{
+        margin-left: 80px;
+    }
+}
+
+@media(max-width: 650px){
+    .contato-pages{
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .contato-conteudo h2{
+        font-size: 30px;
+    }
+    .contato-conteudo p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 500px){
+    .contato-pages{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
