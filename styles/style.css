@@ -487,7 +487,7 @@ header{
     }
     .texto-conceito{
         font-size: 18px;
-        padding: 20px;
+        padding: 15px;
         max-width: 30ch;
     }
 }
@@ -622,6 +622,12 @@ header{
         margin: 0;
         padding: 0;
         gap: 0;
+    }
+
+    .item-footer{
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
     }
 
     .redes-sociais img{
@@ -806,6 +812,11 @@ header{
     background: var(--cor-1);
     border-radius: 7px;
     max-width: 90px;
+    transition: 0.2s;
+}
+
+.contato-conteudo a:hover{
+    border: 2px solid var(--cor-1);
 }
 
 .carrinho-contato{
@@ -860,4 +871,55 @@ header{
         margin-left: 10px;
         margin-right: 10px;
     }
+}
+
+/***********************fim**********************/
+
+/***********************clientes**********************/
+.clientes-conteudo{
+    margin-left: 160px;
+    margin-top: 120px;
+}
+
+.clientes-conteudo h1{
+    font-size: 60px;
+    color: var(--cor-4);
+}
+
+.img-clientes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 50px;
+    background: var(--cor-4);
+    border-radius: 10px;
+    border: 3px solid var(--cor-1);
+}
+
+.flex-clientes{
+    padding: 10px 0px;
+}
+
+.flex-clientes img{
+    padding: 30px;
+}
+
+.clientes-pages{
+    background: var(--cor-3);
+    margin-left: 0px;
+    margin-bottom: 0px;
+    color: var(--cor-2);
+
+}
+
+.carrinho-clientes{
+    margin-left: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.clientes-contato{
+    margin-left: 160px;
 }
